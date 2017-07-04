@@ -1,0 +1,36 @@
+@include cssPrefix('districts-map') {
+
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-top: 40px;
+
+  @include bp-xs {
+    // width: 50%;
+    // float: left;
+
+    &__svg-wrapper {
+      padding-top: 20px;
+      padding-right: 30px;
+
+      @include bp-sm {
+        padding-right: 330px;
+      }
+    }
+  }
+
+  @include bp-sm {
+    padding-top: 0px;
+  }
+
+  &__path {
+    stroke: white;
+    stroke-width: 2px;
+
+    &.-hilight {
+      stroke-width: 4px;
+      stroke: $blue;
+    }
+  }
+
+}

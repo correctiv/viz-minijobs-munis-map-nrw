@@ -1,0 +1,16 @@
+@import './vars.scss';
+@import './mixins.scss';
+
+// base
+@import './base.scss';
+@import './figure_credits.scss';
+@import './loaded.scss';
+
+// reusable component snippets
+@import './components.scss';
+
+// components
+@import '../components/map-infobox/map-infobox.scss';
+@import '../components/map-searchbox/map-searchbox.scss';
+@import '../components/districts-map/districts-map.scss';
+@import '../components/districts-map/districts-map-legend.scss';
