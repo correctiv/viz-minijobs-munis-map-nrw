@@ -12,7 +12,7 @@ import getColor from './get_color.js'
   this.ticks = getColor.quantiles().map(q => {
     return {
       color: getColor(q),
-      value: Math.round(q)
+      value: Math.round(q * 10) / 10
     }
   })
 
