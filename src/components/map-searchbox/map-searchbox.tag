@@ -4,7 +4,7 @@ import {search} from '../../data/entry.js'
 
   <input type="text"
     oninput={ doSearch } class={ getClass('input') }
-    placeholder="Suche nach Deiner Stadt oder Postleitzahl..."
+    placeholder="Suche nach Deiner Stadt..."
   />
   <ul if={ results.length } class={ getClass('result-list') }>
     <li each={ results }
@@ -19,14 +19,9 @@ import {search} from '../../data/entry.js'
   this.doSearch = e => {
     riot.control.trigger(riot.EVT.hideInfobox)
     const str = e.target.value.toLowerCase()
-    if (str.length > 1) {
+    if (str.length > 2) {
       const results = search(str)
-      if (results.length === 1) {
-        this.clearResults()
-        this._jumpTo(results[0])
-      } else {
-        this.update({results})
-      }
+      this.update({results})
     } else {
       this.clearResults()
     }
