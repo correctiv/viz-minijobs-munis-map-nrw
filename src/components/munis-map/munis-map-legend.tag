@@ -1,6 +1,6 @@
 import getColor from './get_color.js'
 
-<districts-map-legend class={ getClass() }>
+<munis-map-legend class={ getClass() }>
 
   <span class={ getClass('annotation') }>Anteil der <strong>ausschließlich</strong> geringfügig Beschäftigten am Wohnort</span>
   <ul class={ getClass('list')}>
@@ -16,4 +16,4 @@ import getColor from './get_color.js'
     }
   })
 
-</districts-map-legend>
+</munis-map-legend>

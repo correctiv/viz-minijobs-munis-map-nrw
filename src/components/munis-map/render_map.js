@@ -16,7 +16,7 @@ export default ({
     .selectAll('path').data(geoData.features).enter().append('path')
       .attr('class', getClass('path'))
       .attr('d', path)
-      .attr('fill', d => getColor(+d.data.pwa))
+      .attr('fill', d => getColor(+d.data.paa))
       .on('mouseover', d => {
         riot.control.trigger(riot.EVT.hilight, d.id)
         riot.control.trigger(riot.EVT.updateInfobox, d.data)
