@@ -42,6 +42,7 @@ import {search} from '../../data/entry.js'
 
   this._jumpTo = data => {
     riot.control.trigger(riot.EVT.updateInfobox, data)
+    riot.control.trigger(riot.EVT.hilight, data.ags)
   }
 
 </map-searchbox>
