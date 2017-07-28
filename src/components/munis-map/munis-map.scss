@@ -10,11 +10,10 @@
     // float: left;
 
     &__svg-wrapper {
-      padding-top: 20px;
-      padding-right: 30px;
+      margin-right: 30px;
 
       @include bp-sm {
-        padding-right: 330px;
+        margin-right: 360px;
       }
     }
   }
